@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  a {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: unset;
+    color: black;
+    text-transform: uppercase;
+    background-color: #f3f3f3;
+
+    &:hover {
+      background-color: #dcdcdc;
+    }
+  }
+}

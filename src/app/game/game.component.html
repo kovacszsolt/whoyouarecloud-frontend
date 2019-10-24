@@ -1,0 +1,10 @@
+<app-header></app-header>
+<main>
+  <h1 [@changeDivSize]=currentState>ARE YOU INTO...</h1>
+  <section>
+    <button (click)="changeRule(currentRule.select1,1)" [className]="'color-'+currentRule.id"
+    >{{currentRule.title1}}</button>
+    <button (click)="changeRule(currentRule.select2,2)"
+            [className]="'color-'+currentRule.id">{{currentRule.title2}}</button>
+  </section>
+</main>
