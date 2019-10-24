@@ -1,9 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
 body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+$colors: '750e13', '760a3a', '4f2196', '0530ad', '003d73', '004548', '054719', 'da1e28', 'd12765';
+$colorhs: '760a3a', '4f2196', '0530ad', '003d73', '004548', '054719', 'da1e28', 'd12765', '8a3ffc';
+$i: 0;
+@each $color in $colors {
+  $i: $i + 1;
+  .color-#{$i} {
+    background-color: ##{$color};
+  }
+}
+
+$i: 0;
+@each $color in $colorhs {
+  $i: $i + 1;
+  .color-#{$i}:hover {
+    background-color: ##{$color};
+  }
 }
