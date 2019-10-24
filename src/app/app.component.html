@@ -1,0 +1,6 @@
+<h1 [@changeDivSize]=currentState>What do you want?</h1>
+<section >
+  <button (click)="changeRule(currentRule.select1)" [className]="'color-'+currentRule.id"
+  >{{currentRule.title1}}</button>
+  <button (click)="changeRule(currentRule.select2)" [className]="'color-'+currentRule.id">{{currentRule.title2}}</button>
+</section>
